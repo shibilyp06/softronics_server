@@ -18,6 +18,11 @@ const accountShema = mongoose.Schema({
     required: true,
     default: 0,
   },
+  block: {
+    type: Boolean,
+    required: true,
+    default: false,
+  },
 });
 
 const AccountModel = mongoose.model("accountdetails", accountShema);
